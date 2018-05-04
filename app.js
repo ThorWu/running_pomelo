@@ -14,6 +14,7 @@
         }
       })
       // 获取用户信息
+      //TODO 接口有所更新
       wx.getSetting({
         success: res => {
           if (res.authSetting['scope.userInfo']) {
