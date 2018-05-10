@@ -20,3 +20,23 @@ page {
   color: #333;
   margin-top: 100rpx;
 }
+
+.text-underline {
+  font-size: 32rpx;
+  color: #e50113;
+  text-decoration-line: underline;
+}
+
+.input {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.input-bg {
+  display: flex;
+  align-items: center;
+
+  height: 80rpx;
+  background-color: #f8f8f8;
+  border-radius: 8rpx;
+}

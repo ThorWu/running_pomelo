@@ -5,3 +5,18 @@
 <view style='display: flex;justify-content: center;'>
   <text class='text-black'>绑定手机号</text>
 </view>
+
+<view class='input-bg' style='  margin-top: 60rpx;'>
+  <image style='width:32rpx;height:32rpx;' src='../../image/phone.png'></image>
+  <input class='input' maxlength='11' placeholder='请输入手机号'></input>
+</view>
+
+<view class='input-bg' style='  margin-top: 40rpx;'>
+  <image style='width:32rpx;height:32rpx;' src='../../image/email.png'></image>
+  <input class='input' placeholder='请输入验证码'></input>
+  <text>获取验证码</text>
+</view>
+
+<view style='display: flex;justify-content: center;  margin-top: 100rpx;'>
+  <text class='text-underline'>通过万科IDM帐号绑定</text>
+</view>
