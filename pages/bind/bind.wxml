@@ -1,4 +1,7 @@
 <!--pages/bind/bind.wxml-->
-<view style='justify-content: center;display: flex;'>
+<view style='display: flex;justify-content: center;'>
   <text class='text-red'>vanke</text>
+</view>
+<view style='display: flex;justify-content: center;'>
+  <text class='text-black'>绑定手机号</text>
 </view>
