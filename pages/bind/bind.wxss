@@ -1,1 +1,16 @@
 /* pages/bind/bind.wxss */
+
+page {
+  min-height: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+
+.text-red {
+  font-size: 60rpx;
+  color: #e50113;
+  margin-top: 160rpx;
+}

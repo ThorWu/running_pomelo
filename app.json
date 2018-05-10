@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/mine/mine",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/mine/mine",
     "pages/bind/bind"
   ],
   "window": {

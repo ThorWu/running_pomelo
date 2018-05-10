@@ -73,6 +73,11 @@ Page({
    * 点击绑定手机
    */
   handleTapBindPhone: function () {
-
+    wx.navigateTo({
+      url: '../bind/bind',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
   }
 })

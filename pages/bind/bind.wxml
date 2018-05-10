@@ -1,2 +1,4 @@
 <!--pages/bind/bind.wxml-->
-<text>pages/bind/bind.wxml</text>
+<view style='justify-content: center;display: flex;'>
+  <text class='text-red'>vanke</text>
+</view>
