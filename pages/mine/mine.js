@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    hasBindPhone: false,
+    avatarUrl: "../../image/mine_head_default.png",
+    userName: '',
+    hasVerified: false,
+    userPhone: '',
+    userPoints: ''
   },
 
   /**
@@ -61,6 +66,13 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+
+  },
+
+  /**
+   * 点击绑定手机
+   */
+  handleTapBindPhone: function () {
 
   }
 })
