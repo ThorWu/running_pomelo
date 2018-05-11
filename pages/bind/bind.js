@@ -4,12 +4,17 @@ Page({
      * 页面的初始数据
      */
   data: {
+    isMine: false,
     isDisable: false,
     time: '获取验证码',
+    canIUse: wx.canIUse('input.adjust-position'),
+    phone: '',
+    verifyCode: ''
   },
+
   handleTapVerifyCode: function () {
     //接口取验证码
-    
+
     //开启计时器
     var currentTime = 60;
     var that = this;
@@ -32,11 +37,42 @@ Page({
     }, 1000)
   },
 
+  handleInputPhone: function (event) {
+    console.assert(this.data.canIUse, "微信版本低于1.9.90")
+    this.setData({
+      phone: event.detail.value
+    })
+    console.log(this.data.phone)
+  },
+
+  handleInputVerifyCode: function (event) {
+    this.setData({
+      verifyCode: event.detail.value
+    })
+    console.log(this.data.verifyCode)
+  },
+
+  handleTapIDM: function () {
+    //点击IDM帐号绑定
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if (options.fromMine) {
+      if (options.fromMine === 'true') {
+        this.setData({
+          isMine: true
+        })
+      } else {
+        this.setData({
+          isMine: false
+        })
+      }
+    }
 
+    console.log("isMine:" + typeof (this.data.isMine) + ":" + this.data.isMine)
   },
 
   /**

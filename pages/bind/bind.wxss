@@ -5,8 +5,6 @@ page {
   background-color: #fff;
   box-sizing: border-box;
   display: block;
-  padding-left: 50rpx;
-  padding-right: 50rpx;
 }
 
 .text-red {
@@ -52,4 +50,17 @@ page {
 
 .verify-code-btn::after {
   border: none;
+}
+
+.button-bottom {
+  font-size: 36rpx;
+  color: #fff;
+  height: 100rpx;
+  opacity: 0.4;
+  background-color: #e60112;
+  border-radius: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }

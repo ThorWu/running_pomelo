@@ -6,17 +6,24 @@
   <text class='text-black'>绑定手机号</text>
 </view>
 
-<view class='input-bg' style='margin-top: 60rpx;'>
+<view class='input-bg' style='margin:60rpx 50rpx 0 50rpx'>
   <image style='width:32rpx;height:32rpx;margin-right:20rpx' src='../../image/phone.png'></image>
-  <input class='input' maxlength='11' placeholder='请输入手机号'></input>
+  <input class='input' bindinput="handleInputPhone" type='number' adjust-position="{{canIUse}}" maxlength='11' placeholder='请输入手机号'></input>
 </view>
 
-<view class='input-bg' style='margin-top: 40rpx;'>
+<view class='input-bg' style='margin:40rpx 50rpx 0 50rpx'>
   <image style='width:32rpx;height:32rpx;margin-right:20rpx' src='../../image/email.png'></image>
-  <input class='input' placeholder='请输入验证码'></input>
+  <input class='input' bindinput="handleInputVerifyCode" type='number' adjust-position="{{canIUse}}" placeholder='请输入验证码'></input>
   <button class="verify-code-btn" bindtap='handleTapVerifyCode' disabled='{{isDisable}}'>{{time}}</button>
 </view>
 
 <view style='display: flex;justify-content: center;  margin-top: 100rpx;'>
-  <text class='text-underline'>通过万科IDM帐号绑定</text>
+  <text bindtap="handleTapIDM" class='text-underline'>通过万科IDM帐号绑定</text>
+</view>
+
+<view wx:if="{{isMine}}">
+  <button class='button-bottom'>绑定</button>
+</view>
+<view wx:else>
+  <button class='button-bottom'>下一步</button>
 </view>
