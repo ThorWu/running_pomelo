@@ -23,7 +23,7 @@ page {
 
 .text-underline {
   font-size: 32rpx;
-  color: #e50113;
+  color: #e60112;
   text-decoration-line: underline;
 }
 
@@ -33,10 +33,23 @@ page {
 }
 
 .input-bg {
+  padding-left: 40rpx;
+  padding-right: 30rpx;
   display: flex;
   align-items: center;
-
   height: 80rpx;
   background-color: #f8f8f8;
   border-radius: 8rpx;
+}
+
+.verify-code-btn {
+  font-size: 28rpx;
+  color: #bbb;
+  position: absolute;
+  right: 80rpx;
+  margin-left: 30rpx;
+}
+
+.verify-code-btn::after {
+  border: none;
 }
