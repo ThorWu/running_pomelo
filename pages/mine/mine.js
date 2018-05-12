@@ -74,7 +74,7 @@ Page({
    */
   handleTapBindPhone: function () {
     wx.navigateTo({
-      url: '../bind/bind',
+      url: '../bind/bind?fromMine=true',
       success: function (res) { },
       fail: function (res) { },
       complete: function (res) { },
