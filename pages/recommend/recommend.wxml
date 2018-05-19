@@ -1,0 +1,10 @@
+<!--pages/recommend/recommend.wxml-->
+
+<text class='text'>text</text>
+
+
+<view class='outside-view'>
+  <view class='inside-view'>
+    <text class='text'>测试</text>
+  </view>
+</view>
