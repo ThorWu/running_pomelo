@@ -1,8 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/mine/mine",
     "pages/logs/logs",
-    "pages/mine/mine"
+    "pages/bind/bind",
+    "pages/recommend/recommend",
+    "pages/example/example"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,8 +27,8 @@
         "text": "主页"
       },
       {
-        "pagePath": "pages/mine/mine",
-        "text": "我的"
+        "pagePath": "pages/example/example",
+        "text": "例子"
       }
     ],
     "position": "bottom"

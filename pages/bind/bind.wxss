@@ -1,0 +1,66 @@
+/* pages/bind/bind.wxss */
+
+page {
+  min-height: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: block;
+}
+
+.text-red {
+  font-size: 60rpx;
+  color: #e50113;
+  margin-top: 160rpx;
+}
+
+.text-black {
+  font-size: 32rpx;
+  color: #333;
+  margin-top: 100rpx;
+}
+
+.text-underline {
+  font-size: 32rpx;
+  color: #e60112;
+  text-decoration-line: underline;
+}
+
+.input {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.input-bg {
+  padding-left: 40rpx;
+  padding-right: 30rpx;
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  background-color: #f8f8f8;
+  border-radius: 8rpx;
+}
+
+.verify-code-btn {
+  font-size: 28rpx;
+  color: #bbb;
+  position: absolute;
+  right: 80rpx;
+  margin-left: 30rpx;
+}
+
+.verify-code-btn::after {
+  border: none;
+}
+
+.button-bottom {
+  font-size: 36rpx;
+  color: #fff;
+  height: 100rpx;
+  opacity: 0.4;
+  background-color: #e60112;
+  border-radius: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}

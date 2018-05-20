@@ -1,0 +1,34 @@
+/* pages/recommend/recommend.wxss */
+
+page {
+  min-height: 100%;
+  background-color: #7ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+}
+
+.outside-view {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: 500rpx;
+  width: 500rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #66f;
+  border:20rpx solid #f90;
+}
+
+.inside-view {
+  border:20rpx solid #f90;
+  box-sizing: content-box;
+  width: 200rpx;
+  height: 200rpx;
+  padding-left: 50rpx;
+  background-color: #f66;
+}

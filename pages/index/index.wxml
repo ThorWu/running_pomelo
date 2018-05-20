@@ -9,7 +9,7 @@
   </view>
 
   <view class="usermotto">
-    <text class="user-motto">{{object.key}} {{array[0]}}</text>
+    <text class="user-motto">{{motto}}</text>
   </view>
-  <view wx:for="{{[zero,1,2,3,4]}}">{{item}}</view>
+  
 </view>
