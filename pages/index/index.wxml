@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<!-- <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -11,5 +11,7 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  
-</view>
+  <view wx:for="{{[zero,1,2,3,4]}}">{{item}}</view>
+</view> -->
+
+<cover-view class='cover-view'>这里是很长的很长的很长的很长的很长的很长的很长的很长的很长的文字，看看能不能换行</cover-view>
