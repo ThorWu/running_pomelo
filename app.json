@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/bind/bind",
     "pages/recommend/recommend",
-    "pages/example/example"
+    "pages/example/example",
+    "pages/mqtt/mqtt"
   ],
   "window": {
     "backgroundTextStyle": "light",

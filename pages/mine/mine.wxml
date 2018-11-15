@@ -20,38 +20,38 @@
 
 <view class='bg-border '>
   <view class='mine-linear '>
-    <image class='img-left ' src='../../image/recruit_cv.png '></image>
+    <image class='img-left ' src='/images/recruit_cv.png '></image>
     <text class='mine-text '>社招简历</text>
-    <image class='img-arrow ' src='../../image/arrow_right_gray.png '></image>
+    <image class='img-arrow ' src='/images/arrow_right_gray.png '></image>
   </view>
   <view class='divider '>
   </view>
   <view class='mine-linear '>
-    <image class='img-left ' src='../../image/recruit_record.png '></image>
+    <image class='img-left ' src='/images/recruit_record.png '></image>
     <text class='mine-text '>社招投递记录</text>
-    <image class='img-arrow ' src='../../image/arrow_right_gray.png '></image>
+    <image class='img-arrow ' src='/images/arrow_right_gray.png '></image>
   </view>
 </view>
 
 <view class='bg-border ' style="margin-top:30rpx">
   <view class='mine-linear '>
-    <image class='img-left ' src='../../image/recruit_cv.png '></image>
+    <image class='img-left ' src='/images/recruit_cv.png '></image>
     <text class='mine-text '>校招简历</text>
-    <image class='img-arrow ' src='../../image/arrow_right_gray.png '></image>
+    <image class='img-arrow ' src='/images/arrow_right_gray.png '></image>
   </view>
   <view class='divider '>
   </view>
   <view class='mine-linear '>
-    <image class='img-left ' src='../../image/recruit_record.png '></image>
+    <image class='img-left ' src='/images/recruit_record.png '></image>
     <text class='mine-text '>校招投递记录</text>
-    <image class='img-arrow ' src='../../image/arrow_right_gray.png '></image>
+    <image class='img-arrow ' src='/images/arrow_right_gray.png '></image>
   </view>
 </view>
 
 <view class='bg-border ' style="margin-top:30rpx;margin-bottom:180rpx" bindtap='handleTapRecommend'>
   <view class='mine-linear '>
-    <image class='img-left ' src='../../image/recruit_record.png '></image>
+    <image class='img-left ' src='/images/recruit_record.png '></image>
     <text class='mine-text '>我的推荐记录</text>
-    <image class='img-arrow ' src='../../image/arrow_right_gray.png '></image>
+    <image class='img-arrow ' src='/images/arrow_right_gray.png '></image>
   </view>
 </view>

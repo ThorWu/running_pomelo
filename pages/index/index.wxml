@@ -14,4 +14,4 @@
   <view wx:for="{{[zero,1,2,3,4]}}">{{item}}</view>
 </view> -->
 
-<cover-view class='cover-view'>这里是很长的很长的很长的很长的很长的很长的很长的很长的很长的文字，看看能不能换行</cover-view>
+<cover-view class='cover-view'>这里是小柚子爸爸学习微信小程序的地方，码的字越多，飞奔的小柚子会更快的running!</cover-view>

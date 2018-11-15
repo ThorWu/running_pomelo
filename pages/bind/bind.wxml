@@ -7,12 +7,12 @@
 </view>
 
 <view class='input-bg' style='margin:60rpx 50rpx 0 50rpx'>
-  <image style='width:32rpx;height:32rpx;margin-right:20rpx' src='../../image/phone.png'></image>
+  <image style='width:32rpx;height:32rpx;margin-right:20rpx' src='/images/phone.png'></image>
   <input class='input' bindinput="handleInputPhone" type='number' adjust-position="{{canIUse}}" maxlength='11' placeholder='请输入手机号'></input>
 </view>
 
 <view class='input-bg' style='margin:40rpx 50rpx 0 50rpx'>
-  <image style='width:32rpx;height:32rpx;margin-right:20rpx' src='../../image/email.png'></image>
+  <image style='width:32rpx;height:32rpx;margin-right:20rpx' src='/images/email.png'></image>
   <input class='input' bindinput="handleInputVerifyCode" type='number' adjust-position="{{canIUse}}" placeholder='请输入验证码'></input>
   <button class="verify-code-btn" bindtap='handleTapVerifyCode' disabled='{{isDisable}}'>{{time}}</button>
 </view>

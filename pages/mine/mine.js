@@ -6,7 +6,7 @@ Page({
    */
   data: {
     hasBindPhone: false,
-    avatarUrl: "../../image/mine_head_default.png",
+    avatarUrl: "/images/mine_head_default.png",
     userName: '',
     hasVerified: false,
     userPhone: '',
