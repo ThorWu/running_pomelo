@@ -18,7 +18,7 @@ Page({
 
     len = len || 32;
 
-    var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+    var $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
 
     var maxPos = $chars.length;
 
@@ -29,7 +29,7 @@ Page({
       pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
 
     }
-
+    console.log('randomString:' + pwd)
     return pwd;
 
   },
@@ -146,11 +146,12 @@ Page({
 
 
 
-    var client = new Client('wss://xxx.xx.xx/mqtt', that.randomString());
+    // var client = new Client('ws://192.168.3.98:9093/mqtt', that.randomString());
+    var client = new Client('192.168.3.98', 9093, '/mqtt', that.randomString(12));
 
     client.connect({
 
-      useSSL: true,
+      useSSL: false,
 
       cleanSession: true,
 
@@ -207,5 +208,59 @@ Page({
   },
 
 
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    this.doConnect()
+  },
 
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
 })

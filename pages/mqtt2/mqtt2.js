@@ -1,4 +1,4 @@
-// pages/example/example.js
+// pages/mqtt2/mqtt2.js
 Page({
 
   /**
@@ -6,28 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  onTapMQTT: function () {
-    wx.navigateTo({
-      url: '../mqtt/mqtt',
-      success: (result) => {
-
-      },
-      fail: () => {},
-      complete: () => {}
-    });
-  },
-
-  onTapMQTT2: function () {
-    wx.navigateTo({
-      url: '../mqtt2/mqtt2',
-      success: (result) => {
-
-      },
-      fail: () => {},
-      complete: () => {}
-    });
   },
 
   /**

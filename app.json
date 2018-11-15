@@ -6,7 +6,8 @@
     "pages/bind/bind",
     "pages/recommend/recommend",
     "pages/example/example",
-    "pages/mqtt/mqtt"
+    "pages/mqtt/mqtt",
+    "pages/mqtt2/mqtt2"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,2 +1,3 @@
 <!--pages/example/example.wxml-->
 <view class="sub-title" bindtap="onTapMQTT">MQTT</view>
+<view class="sub-title" bindtap="onTapMQTT2">MQTT2</view>
