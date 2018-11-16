@@ -1,4 +1,7 @@
-// pages/example/example.js
+// pages/websocket/websocket.js
+const webSocketQ = require('../../utils/ws/websocket-queue.js') //websocket的连接
+const SOCKET_TASK_KEY = "SOCKET_TASK_TEST" //websocket的key
+
 Page({
 
   /**
@@ -8,44 +11,15 @@ Page({
 
   },
 
-  onTapMQTT: function () {
-    wx.navigateTo({
-      url: '../mqtt/mqtt',
-      success: (result) => {
-
-      },
-      fail: () => {},
-      complete: () => {}
-    });
-  },
-
-  onTapMQTT2: function () {
-    wx.navigateTo({
-      url: '../mqtt2/mqtt2',
-      success: (result) => {
-
-      },
-      fail: () => {},
-      complete: () => {}
-    });
-  },
-
-  onTapWebSocket: function () {
-    wx.navigateTo({
-      url: '../websocket/websocket',
-      success: (result) => {
-
-      },
-      fail: () => {},
-      complete: () => {}
-    });
+  onMessage: function (res) {
+    console.log('chat onmessagelistener:' + JSON.stringify(res))
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    webSocketQ.linkListener(SOCKET_TASK_KEY, this.onMessage)
   },
 
   /**

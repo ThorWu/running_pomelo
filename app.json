@@ -7,7 +7,8 @@
     "pages/recommend/recommend",
     "pages/example/example",
     "pages/mqtt/mqtt",
-    "pages/mqtt2/mqtt2"
+    "pages/mqtt2/mqtt2",
+    "pages/websocket/websocket"
   ],
   "window": {
     "backgroundTextStyle": "light",
