@@ -146,10 +146,17 @@ Page({
 
 
 
-    // var client = new Client('ws://192.168.3.98:9093/mqtt', that.randomString());
-    var client = new Client('192.168.3.98', 9093, '/mqtt', that.randomString(12));
-
+    // var client = new Client('ws://192.168.4.3:9093/mqtt', that.randomString());
+    // var client = new Client('192.168.4.3', 9093, '/mqtt', that.randomString(12));
+    //测试百度云
+    var client = new Client('wss://www.mengmeitong.com/mqtt', that.randomString());
     client.connect({
+
+      //百度云
+      hosts: ["miniprogram.mqtt.iot.bj.baidubce.com"],
+      ports: [443],
+      userName: "miniprogram/gekongfei",
+      password: "sgx+vSWVMhLS5asUlvXZG03vDTGO8McG+9IMwbVpL40=",
 
       useSSL: false,
 
@@ -158,6 +165,8 @@ Page({
       keepAliveInterval: 5,
 
       onSuccess: function () {
+
+        console.log('connect suc')
 
         wx.showToast({
 
