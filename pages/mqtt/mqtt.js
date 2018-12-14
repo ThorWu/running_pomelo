@@ -161,7 +161,7 @@ Page({
 
       keepAliveInterval: 60,
 
-      userName: "HrM4RTID",
+      userName: "HrM4RTID",//TODO:以这个字段为用户唯一标识，传token
 
       onSuccess: function () {
 
