@@ -8,10 +8,9 @@ Page({
 
   data: {
 
-    requestResult: '',
+    client: null,
 
-    client: null
-
+    msg: ''
   },
 
   randomString: function (len) {
@@ -94,14 +93,20 @@ Page({
 
       title: '发送失败',
 
-      icon: 'success',
-
       duration: 2000
 
     })
 
   },
 
+  onTabPublish: function () {
+    this.doPublish()
+  },
+
+
+  onTabSubcribe: function () {
+    this.doSubscribe()
+  },
 
 
   doSubscribe: function () {
@@ -110,7 +115,7 @@ Page({
 
     this.subscribe('test/topic', {
 
-      qos: 1
+      qos: 2
 
     })
 
@@ -122,7 +127,7 @@ Page({
 
     console.log('doPublish');
 
-    this.publish('test/topic', 'Hello World', 1, false)
+    this.publish('test/topic', 'Hello World', 2, false)
 
   },
 
@@ -145,24 +150,18 @@ Page({
     }
 
 
+    //TODO: clientId 和 userName
+    var client = new Client('ws://192.168.4.3:9093/mqtt', that.randomString());
 
-    // var client = new Client('ws://192.168.4.3:9093/mqtt', that.randomString());
-    // var client = new Client('192.168.4.3', 9093, '/mqtt', that.randomString(12));
-    //测试百度云
-    var client = new Client('wss://www.mengmeitong.com/mqtt', that.randomString());
     client.connect({
-
-      //百度云
-      hosts: ["miniprogram.mqtt.iot.bj.baidubce.com"],
-      ports: [443],
-      userName: "miniprogram/gekongfei",
-      password: "sgx+vSWVMhLS5asUlvXZG03vDTGO8McG+9IMwbVpL40=",
 
       useSSL: false,
 
       cleanSession: true,
 
-      keepAliveInterval: 5,
+      keepAliveInterval: 60,
+
+      userName: "HrM4RTID",
 
       onSuccess: function () {
 
@@ -174,7 +173,9 @@ Page({
 
         })
 
-        that.data.client = client
+        that.setData({
+          client: client
+        })
 
         client.onMessageArrived = function (msg) {
 
@@ -192,6 +193,9 @@ Page({
 
           })
 
+          that.setData({
+            msg: JSON.stringify(msg)
+          })
         }
 
         client.onConnectionLost = function (responseObject) {

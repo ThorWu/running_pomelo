@@ -1,2 +1,9 @@
 <!--pages/mqtt/mqtt.wxml-->
 <text>微信小程序使用MQTT PAHO</text>
+
+<view bindtap="onTabSubcribe">订阅</view>
+
+<view bindtap="onTabPublish">发布</view>
+
+<view>{{msg}}</view>
+
