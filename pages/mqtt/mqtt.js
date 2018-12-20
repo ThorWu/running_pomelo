@@ -113,7 +113,7 @@ Page({
 
     console.log('doSubscribe');
 
-    this.subscribe('test/topic', {
+    this.subscribe('sxaxEe8w', {
 
       qos: 2
 
@@ -127,7 +127,19 @@ Page({
 
     console.log('doPublish');
 
-    this.publish('test/topic', 'Hello World', 2, false)
+    var msgStr = JSON.stringify({
+      "from": "sxaxEe8w", // 消息发送者UUID
+      "to": "HrM4RTID", // 消息接收者UUID
+      "content": "测试publish", // 消息内容
+      "timestamp": "1544692167125", // 客户端发出的时间
+      "role": "1", // 角色 0 初始角色，1 学生，2 职场人士， 3 咨询师
+      "type": "0", // 消息类型 0普通消息1名片２评价100已读
+      "question_id":"11"
+    })
+
+    console.log('msgStr:' + msgStr)
+
+    this.publish('HrM4RTID', msgStr, 2, false)
 
   },
 
@@ -151,7 +163,8 @@ Page({
 
 
     //TODO: clientId 和 userName
-    var client = new Client('ws://192.168.4.3:9093/mqtt', that.randomString());
+    // var client = new Client('ws://192.168.4.3:9093/mqtt', that.randomString());
+    var client = new Client('ws://dev.dashixiong.com/mqtt', that.randomString());
 
     client.connect({
 
@@ -161,7 +174,7 @@ Page({
 
       keepAliveInterval: 60,
 
-      userName: "HrM4RTID",//TODO:以这个字段为用户唯一标识，传token
+      userName: "sxaxEe8w", //TODO:以这个字段为用户唯一标识，传token
 
       onSuccess: function () {
 
